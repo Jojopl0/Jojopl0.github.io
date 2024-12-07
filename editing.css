@@ -1,0 +1,352 @@
+/* General font settings for Montserrat */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, sans-serif;
+    background-color: #ECDFCF;
+    background-image: url(assets/img/backgroundForWeb.jpeg);
+    background-size: cover; /* Ensures the entire image fits */
+    background-position: center;
+    background-repeat:repeat-y;
+    height: 100vh; /* Makes sure the height is 100% of the viewport height */
+    margin: 0;
+}
+
+
+
+/* Prevent scrolling for the entire page */
+body.no-scroll {
+    overflow: hidden;
+}
+
+
+
+/*For Home*/
+/* Style for the 'bigImage' container */
+.IntroductionSection {
+    position: relative; /* This helps in positioning child elements absolutely inside */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: translateY(250px);
+}
+
+/* Styling for the intro paragraph */
+.intro {
+    font-size: 30px; /* Adjust size based on preference */
+    color: #463f3a; /* Ensure visibility on dark backgrounds */
+    font-weight: bold;
+    margin: 0;
+    z-index: 2; /* Ensure it appears above the background */
+    opacity: 0.9; /* Optional: add slight transparency */
+}
+
+.smallText {
+    font-size: 15px; /* Adjust size based on preference */
+    color: #463f3a;
+    font-family: Tahoma, sans-serif;
+}
+
+.style-script-regular {
+    font-family: "Style Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .allura-regular {
+    font-family: "Allura", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+/* Styling for the signature */
+.signature {
+    font-family: 'Style Script', cursive; /* Exact name match from Google Fonts */
+    font-size: 80px;
+    margin-top: 20px;
+    z-index: 2;
+}
+
+
+/* Optional: Add a slight shadow to make the text pop against the background */
+.intro, .underintro, .signature {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+
+
+
+.tabs {
+    font-family: Tahoma, sans-serif;
+    display: flex; /* Create a horizontal layout */
+    align-items: center; /* Vertically center items */
+    padding: 15px 30px; /* Add padding */
+    position: sticky; /* Keep it fixed at the top */
+    top: 0;
+    width: 100%; /* Ensure it stretches across the viewport */
+    max-width: 100%; /* Prevent overflow */
+    box-sizing: border-box; /* Include padding in total width */
+    z-index: 1000; /* Ensure it stays on top of other elements */
+}
+
+body.home-screen .tabs {
+    justify-content: flex-end; /* Align the tabs to the right */
+}
+
+/* Specific styles for the tabs on other pages */
+body:not(.home-screen) .tabs {
+    justify-content: space-between; /* Space items evenly, logo on the left and tabs on the right */
+}
+
+.tabs .logo {
+    font-size: 20px; /* Size of the name/logo */
+    color: black; /* Logo text color */
+    font-weight: bold;
+    flex-shrink: 0; /* Prevent the logo from shrinking */
+}
+
+.tabs .tab-links {
+    display: flex; /* Align links horizontally */
+    gap: 20px; /* Space between links */
+    flex-shrink: 1; /* Allow links to shrink if necessary */
+}
+
+.tab-links a {
+    color: #463f3a; /* Text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 17px; /* Font size for links */
+    padding: 5px 10px; /* Add padding inside the links */
+    white-space: nowrap; /* Prevent links from wrapping */
+}
+
+.tab-links a:hover {
+    background-color: #4CAF50; /* Green background on hover */
+    color: white;
+    border-radius: 5px; /* Rounded corners */
+}
+
+.tab-links a.active {
+    background-color: #007BFF; /* Blue background for active tab */
+    color: white;
+    border-radius: 5px;
+}
+
+
+/*For About section*/
+.about {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.about h2 {
+    text-align: center; /* Centers text horizontally */
+    margin: 0 auto; /* Ensures no extra margins on the sides */
+    display: block; /* Makes sure it's treated as a block element */
+    padding: 20px; /* Optional: Add some space around the text */
+}
+
+.joPic {
+    width: 50%; /* Adjust to a percentage or pixel value */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center the image horizontally */
+    display: block; /* Ensure proper centering */
+    border-radius: 15px;
+}
+
+.michiganLogon {
+    max-width: 50%; /* Scale images to fit their container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+.contentsection {
+    display: flex; /* Enable flexbox for layout */
+    flex-direction: column; /* Stack the elements vertically */
+    justify-content: center; /* Center elements vertically */
+    align-items: center; /* Center elements horizontally */
+    text-align: center; /* Ensure text is centered */
+    margin: 0 auto; /* Center horizontally within the parent */
+    width: 100%; /* Optional: Adjust width if needed */
+    padding: 25px; /* Optional: Add some spacing */
+}
+
+.content-section {
+    display: flex;
+    justify-content: space-between; /* Separate text and image sections */
+    align-items: center;
+    padding: 25px 10%; /* Ensure consistent padding */
+}
+
+.text-section {
+    width: 50%;
+    padding-right: 20px;
+}
+
+
+
+.image-section {
+    width: 50%; /* Ensure it takes up half the width */
+    display: flex;
+    transform: translateX(50px);
+    justify-content:center; /* Center the images horizontally */
+    flex-wrap:nowrap; /* Allow images to wrap to the next line if needed */
+    gap: 10px; /* Space between images */
+}
+
+.image-section img {
+    max-width: 35%; /* Scale images to fit within the container without overlapping */
+    height: auto; /* Maintain aspect ratio */
+    border: 3px solid #ddd; /* Optional: Add borders */
+    border-radius: 10px; /* Optional: Rounded corners */
+    object-fit: contain; /* Prevent image distortion */
+}
+
+
+.image-section-horizontal {
+    width: 50%; /* Same width as the vertical section */
+    display: flex;
+    transform: translateX(50px);
+    justify-content: space-between; /* Spread images evenly */
+    align-items: center; /* Align images vertically */
+    flex-wrap: nowrap; /* Keep images on the same row */
+    gap: 15px; /* Space between images */
+}
+
+.image-section-horizontal img {
+    max-width: 35%; /* Allow three images to fit in a single row (adjust as needed) */
+    height: auto; /* Maintain aspect ratio */
+    border: 3px solid #ddd; /* Add borders */
+    border-radius: 8px; /* Slight rounding of corners */
+    object-fit: cover; /* Fill the space without distortion */
+}
+
+
+
+
+/* General styles for the experience section */
+.experience-section {
+    text-align: center;
+    padding: 50px 20px;
+    color: #212529; /* Dark text color */
+}
+
+/* Container for the cards */
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* Wrap cards if they overflow */
+    justify-content: center; /* Center the cards */
+    gap: 20px; /* Space between the cards */
+}
+
+/* Individual card styles */
+.card {
+    background-color: #ffffff; /* White background */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 10px; /* Rounded corners */
+    width: 300px; /* Fixed width for the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s; /* Animation for hover */
+}
+
+/* Hover effect for cards */
+.card:hover {
+    transform: translateY(-5px); /* Move slightly up */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+}
+
+/* Card icon styles */
+.card-icon img {
+    width: 50px; /* Size of the icon */
+    height: 50px;
+    margin-bottom: 10px; /* Space between icon and title */
+}
+
+/* Card title */
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #463f3a; /* Custom color */
+    margin: 10px 0; /* Space around the title */
+}
+
+/* Card description */
+.card-description {
+    font-size: 16px;
+    color: #6c757d; /* Subtle gray text */
+    line-height: 1.5; /* Better readability */
+}
+
+footer {
+    position: fixed; /* Fix the footer to a specific position */
+    bottom: 0; /* Place it at the bottom of the viewport */
+    left: 0; /* Align it to the left edge */
+    width: 100%; /* Make it span the entire width of the page */
+    text-align: center; /* Center the text inside the footer */
+    padding: 10px 0; /* Adjust padding to fit visually */
+    font-size: 0.8em; /* Smaller font size */
+}
+
+footer a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+.resume-download {
+    text-align: center; /* Center the button below the cards */
+    margin-top: 30px; /* Add some space between the cards and the button */
+}
+
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff; /* White text */
+    background-color: #007BFF; /* Blue background */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.download-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+.download-button:active {
+    transform: scale(1); /* Reset size when clicked */
+}
+
+.contact-info {
+    text-align: center; /* Center align the text */
+    transform: translateY(150px);
+    margin-top: 20px; /* Add some space above the contact section */
+    font-size: 16px; /* Adjust font size for readability */
+    color: #463f3a; /* Match the rest of the website's color theme */
+}
+
+.contact-info p {
+    margin: 5px 0; /* Add spacing between lines */
+}
+
+.contact-info a {
+    color: #007BFF; /* Blue color for links */
+    text-decoration: none; /* Remove underline for links */
+    font-weight: bold; /* Make the links bold */
+    transition: color 0.3s; /* Add smooth hover effect */
+}
+
+.contact-info a:hover {
+    color: #0056b3; /* Darker blue on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
