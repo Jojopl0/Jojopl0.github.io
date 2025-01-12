@@ -216,8 +216,6 @@ body:not(.home-screen) .tabs {
 .image-section-horizontal img {
     max-width: 35%; /* Allow three images to fit in a single row (adjust as needed) */
     height: auto; /* Maintain aspect ratio */
-    border: 3px solid #ddd; /* Add borders */
-    border-radius: 8px; /* Slight rounding of corners */
     object-fit: cover; /* Fill the space without distortion */
 }
 
