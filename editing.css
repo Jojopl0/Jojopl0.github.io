@@ -234,6 +234,7 @@ body:not(.home-screen) .tabs {
     display: flex;
     flex-wrap: wrap; /* Wrap cards if they overflow */
     justify-content: center; /* Center the cards */
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px; /* Space between the cards */
 }
 
